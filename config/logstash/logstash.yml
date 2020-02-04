@@ -1,0 +1,8 @@
+http.host: 0.0.0.0
+xpack.monitoring.enabled: true
+# read password from logstash.keystore
+xpack.monitoring.elasticsearch.password: ${ELASTIC_PASSWORD}
+xpack.monitoring.elasticsearch.url: http://localhost:${ELASTIC_PORT}
+xpack.monitoring.elasticsearch.username: logstash_system
+xpack.security.http.ssl.enabled: false
+#xpack.monitoring.elasticsearch.ssl.ca: /usr/share/logstash/config/certs/ca/ca.crt
